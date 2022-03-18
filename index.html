@@ -1,0 +1,58 @@
+<htm>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="w-75  py-4 mx-auto">
+            <label for="productName">productName:</label>
+            <input class="form-control my-2" id="productName" type="text" name="productName">
+
+            <label for="productPrice">productPrice:</label>
+            <input class="form-control my-2" id="productPrice" type="number" name="productPrice">
+
+            <label for="productCategory">productCategory:</label>
+            <input class="form-control my-2" id="productCategory" type="text" name="productCategory">
+
+            <label for="productDesc">productDesc:</label>
+            <textarea class="form-control my-2 " id="productDesc" type="text" name="productDesc"></textarea>
+
+            <button onclick="addProduct()" id="mainbtn" class="btn btn-info">add product</button>
+
+        </div>
+
+        <div class="w-75 mx-auto py-4">
+            <div class="my-3 w-75 mx-auto">
+                <label class="my-3" for="">search by name:</label>
+                <input onkeyup="searchProducts(this.value)" id="searchInput" type="text" name="" class="form-control ">
+            </div>
+            <table class="table mx-auto">
+                <thead>
+                    <th>index</th>
+                    <th>productName</th>
+                    <th>productPrice</th>
+                    <th>productCategory</th>
+                    <th>productDesc</th>
+                    <th>update</th>
+                    <th>delet</th>
+                </thead>
+                <tbody id="tableRow">
+                   
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="main.js"></script>
+    </body>
+</htm>
